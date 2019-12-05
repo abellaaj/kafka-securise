@@ -11,6 +11,6 @@
 
 2) lancer kafka : ./kafka-server-start.sh ../config.server.properties
 
-- Pour le cas de SCRAM il faut lancer la commande suivnte pour créer le user admin ainsi que son mot de passe:
+- Pour le cas de SCRAM il faut lancer la commande suivnte pour créer le user admin ainsi que son mot de passe, c'est mieux de la lancer entre la phase 1 et 2:
 
 ./kafka-configs.sh --zookeeper localhost:2181 --alter --add-config 'SCRAM-SHA-256=[password=admin-secret],SCRAM-SHA-512=[password=admin-secret]' --entity-type users --entity-name "admin"
